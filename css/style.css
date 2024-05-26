@@ -1,0 +1,103 @@
+body {
+    background-color: hsl(218, 23%, 16%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Manrope';
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Manrope';
+}
+
+.advice-banner {
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    width: 480px;
+    height: 270px;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -35px;
+}
+
+h3 {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.26em;
+    color: hsl(150, 100%, 66%);
+}
+
+p {
+    font-size: 28px;
+    font-weight: 800;
+    color: hsl(193, 38%, 86%);
+}
+
+.pattern-divider {
+    margin-bottom: 50px;
+}
+
+.button-dice {
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+    border-radius: 50%;
+    padding: 18px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+  
+.button-dice:hover,
+.button-dice:active {
+    box-shadow: 0 0 10px 5px hsl(150, 100%, 66%);
+}
+  
+.button-dice img {
+    display: block;
+    width: 32px;
+}
+
+.button-container {
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 600px) {
+    .advice-banner {
+        width: 80%;
+    }
+
+    .pattern-divider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    .pattern-divider img {
+        width: 100%;
+    }
+}
